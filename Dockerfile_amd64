@@ -20,6 +20,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
                 && chmod +x /app/tg_downloader.py \
                 && chown -R 1000:1000 /app
 
-USER 1000:1000
+USER 1026:100
 WORKDIR /app
 ENTRYPOINT ["/app/tg_downloader.py"]
